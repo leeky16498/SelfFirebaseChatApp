@@ -12,7 +12,7 @@ import FirebaseFirestoreSwift
 
 class UsersViewModel : ObservableObject {
     
-    @Published var users : [CurrentUser] = []
+    @Published var users : [UserModel] = []
     
     init() {
         fetchUserLists()
@@ -29,7 +29,7 @@ class UsersViewModel : ObservableObject {
                 print("success")
                 //success
                 documentSnapshot?.documents.forEach({ snapshot in
-                    guard let user = try? snapshot.data(as: CurrentUser.self) else {return}
+                    guard let user = try? snapshot.data(as: UserModel.self) else {return}
                     
                     if user.uid != FirebaseManager.shared.auth.currentUser?.uid {
                         self.users.append(user)

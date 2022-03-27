@@ -17,7 +17,7 @@ struct MainView: View {
                     Text("Profile")
                 })
             
-            ChatListView()
+            RecentMessageView()
                 .tabItem({
                     Image(systemName: "bubble.right")
                     Text("Messages")

@@ -12,7 +12,7 @@ import FirebaseFirestoreSwift
 
 class ProfileViewManager : ObservableObject {
     
-    @Published var currentUser : CurrentUser?
+    @Published var currentUser : UserModel?
     
     init() {
         fetchCurrentUser()
@@ -29,7 +29,7 @@ class ProfileViewManager : ObservableObject {
                 }
                 //success
                 print("success")
-                self.currentUser = try? snapshot?.data(as: CurrentUser.self)
+                self.currentUser = try? snapshot?.data(as: UserModel.self)
             }
     }
     

@@ -16,7 +16,7 @@ struct UsersView: View {
                 VStack{
                     ForEach(vm.users) { user in
                         NavigationLink(destination: {
-                            Text("user")
+                            ChatView(user: user)
                         }, label: {
                             UserListRowView(user: user)
                         })

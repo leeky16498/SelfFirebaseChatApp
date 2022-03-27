@@ -1,5 +1,5 @@
 //
-//  UserListRowView.swift
+//  RecentMessageRowView.swift
 //  SelfFirebaseChatApp
 //
 //  Created by Kyungyun Lee on 27/03/2022.
@@ -8,13 +8,13 @@
 import SwiftUI
 import SDWebImageSwiftUI
 
-struct UserListRowView: View {
+struct RecentMessageRowView: View {
     
-    let user : UserModel?
+    let recentMessage : RecentMessageModel?
     
     var body: some View {
         HStack {
-            if let url = user?.profileImageUrl {
+            if let url = recentMessage?.profileImageUrl {
                 WebImage(url: URL(string: url))
                     .resizable()
                     .scaledToFill()
@@ -39,22 +39,22 @@ struct UserListRowView: View {
             }
             
             VStack(alignment:. leading, spacing: 5) {
-                Text(user?.fullname ?? "")
+                Text(recentMessage?.fullname ?? "")
                     .font(.headline)
-                    .foregroundColor(.black)
-                Text(user?.username ?? "")
+                     .foregroundColor(.black)
+                Text(recentMessage?.text ?? "")
                     .font(.footnote)
                     .foregroundColor(.gray)
-                    .foregroundColor(.black)
             }
             Spacer()
+            Text(recentMessage?.timeAgo ?? "")
         }
         .padding(.horizontal)
     }
 }
 //
-//struct UserListRowView_Previews: PreviewProvider {
+//struct RecentMessageRowView_Previews: PreviewProvider {
 //    static var previews: some View {
-//        UserListRowView()
+//        RecentMessageRowView()
 //    }
 //}
