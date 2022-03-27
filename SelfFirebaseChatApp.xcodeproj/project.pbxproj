@@ -23,6 +23,7 @@
 		7980C86527EFEE7800F26107 /* UserListRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7980C86427EFEE7800F26107 /* UserListRowView.swift */; };
 		7980C86727EFF10600F26107 /* ChatView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7980C86627EFF10600F26107 /* ChatView.swift */; };
 		7980C86927EFF28A00F26107 /* ChatViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7980C86827EFF28A00F26107 /* ChatViewModel.swift */; };
+		7980C86B27EFF31F00F26107 /* ChatModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7980C86A27EFF31F00F26107 /* ChatModel.swift */; };
 		798E887D27EF9EF300F759AB /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 798E887C27EF9EF300F759AB /* FirebaseAuth */; };
 		798E887F27EF9EF300F759AB /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 798E887E27EF9EF300F759AB /* FirebaseFirestore */; };
 		798E888127EF9EF300F759AB /* FirebaseFirestoreSwift-Beta in Frameworks */ = {isa = PBXBuildFile; productRef = 798E888027EF9EF300F759AB /* FirebaseFirestoreSwift-Beta */; };
@@ -53,6 +54,7 @@
 		7980C86427EFEE7800F26107 /* UserListRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserListRowView.swift; sourceTree = "<group>"; };
 		7980C86627EFF10600F26107 /* ChatView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatView.swift; sourceTree = "<group>"; };
 		7980C86827EFF28A00F26107 /* ChatViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatViewModel.swift; sourceTree = "<group>"; };
+		7980C86A27EFF31F00F26107 /* ChatModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatModel.swift; sourceTree = "<group>"; };
 		798E888C27EF9F5500F759AB /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		798E888E27EF9F5C00F759AB /* SignUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpView.swift; sourceTree = "<group>"; };
 		798E889127EF9FBE00F759AB /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
@@ -103,6 +105,7 @@
 			isa = PBXGroup;
 			children = (
 				7980C85B27EFBA8E00F26107 /* CurrentUser.swift */,
+				7980C86A27EFF31F00F26107 /* ChatModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -295,6 +298,7 @@
 				7980C85C27EFBA8E00F26107 /* CurrentUser.swift in Sources */,
 				7980C85E27EFBBD000F26107 /* ProfileViewManager.swift in Sources */,
 				7980C85927EFB69500F26107 /* SettingView.swift in Sources */,
+				7980C86B27EFF31F00F26107 /* ChatModel.swift in Sources */,
 				798E889227EF9FBE00F759AB /* HomeView.swift in Sources */,
 				7980C86027EFCDCE00F26107 /* UsersViewModel.swift in Sources */,
 				79D7D5DA27EF9C62006D95C9 /* SelfFirebaseChatAppApp.swift in Sources */,

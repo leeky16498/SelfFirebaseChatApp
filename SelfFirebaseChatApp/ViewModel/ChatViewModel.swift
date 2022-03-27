@@ -12,7 +12,13 @@ import FirebaseFirestoreSwift
 
 class ChatViewModel : ObservableObject {
     
+    init() {
+        fetchChats()
+    }
     
-    func fetchChats
+    
+    func fetchChats() {
+        
+    }
     
 }
