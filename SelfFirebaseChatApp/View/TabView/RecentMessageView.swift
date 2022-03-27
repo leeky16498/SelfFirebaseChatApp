@@ -17,7 +17,9 @@ struct RecentMessageView: View {
                 VStack{
                     ForEach(vm.recentMessages) { recentMessage in
                         NavigationLink(destination: {
-                            
+                            let uid = FirebaseManager.shared.auth.currentUser?.uid == recentMessage.fromID ? recentMessage.toID : recentMessage.fromID
+                            let user = UserModel(uid: uid, email: recentMessage.email, profileImageUrl: recentMessage.profileImageUrl, fullname: recentMessage.fullname, username: recentMessage.username)
+                            ChatView(user: user)
                         }, label: {
                             RecentMessageRowView(recentMessage: recentMessage)
                         })
